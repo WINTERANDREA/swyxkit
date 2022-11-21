@@ -1,6 +1,7 @@
 <script>
 	import Newsletter from '../components/Newsletter.svelte';
 	import FeatureCard from '../components/FeatureCard.svelte';
+	import PdfViewer from 'svelte-pdf';
 	import {
 		SITE_URL,
 		REPO_URL,
@@ -35,7 +36,10 @@
 	<meta name="twitter:description" content={SITE_DESCRIPTION} />
 	<meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
 </svelte:head>
-
+<section class="w-full mb-16">
+	<h1 class="text-red">HEY ABBEEE</h1>
+	<PdfViewer url='https://raw.githubusercontent.com/vinodnimbalkar/svelte-pdf/369db2f9edbf5ab8c87184193e1404340729bb3a/public/sample.pdf' />
+</section>
 <div
 	class="flex flex-col items-start justify-center max-w-2xl px-4 pb-16 mx-auto border-gray-200 dark:border-gray-700 sm:px-8"
 >
@@ -67,7 +71,10 @@
 		<!-- <div
 				class="w-[80px] h-[80px] rounded-full sm:w-[176px] sm:h-[136px] relative mb-8 sm:mb-0 mr-auto bg-cyan-300 bg-opacity-25"
 			/> -->
+			
 	</div>
+
+	
 
 	<section class="w-full mb-16">
 		<h3 class="mb-6 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">
